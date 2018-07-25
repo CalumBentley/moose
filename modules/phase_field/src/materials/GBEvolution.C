@@ -28,7 +28,7 @@ GBEvolution::GBEvolution(const InputParameters & parameters)
 void
 GBEvolution::computeQpProperties()
 {
-  // eV/nm^2
+  // eV/lengthscale^2
   _sigma[_qp] = _GBEnergy * _JtoeV * (_length_scale * _length_scale);
 
   GBEvolutionBase::computeQpProperties();
